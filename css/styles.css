@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset end */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    /* max-width: 1920px; */
+    width: 100%;
+    background-color: red;
+}
+.container-fluid {
+    max-width: 1600px;
+}
+.container-padding {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#slider {
+    height: 1024px;
+    max-height: 100%;
+    min-height: 600px;
+    position: relative;
+    background-color: #555556;
+    background-image: url('../img/slider.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+#slider .slider-info {
+    color: white;
+    /* width: 500px; */
+    text-align: center;
+    margin: 0 auto;
+}
+.action-button {
+    height: 50px;
+    background-color: #998675;
+    padding: 15px 25px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Raleway";
+    font-weight: 600;
+}
+header {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo-title {
+    margin-left: 20px;
+    font-family: "Raleway";
+}
+header nav ul.main-navigation, header nav ul.navigation-buttons {
+    display: inline-flex;
+}
+header nav ul.navigation-buttons {
+    margin-left: 10px;
+}
+header nav ul li {
+    padding: 0 20px;
+    list-style: none;
+    text-align: center;
+}
+header nav ul li a {
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+header nav ul.main-navigation li a:hover {
+    color: #c7b299;
+}
+header .logo .logo-title {
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 34px;
+}
+#slider .slider-info {
+    width: 700px;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+}
+#slider .slider-info .subtitle {
+    font-size: 36px;
+    font-family: "Raleway";
+    margin-bottom: 25px;
+}
+#slider .slider-info .title {
+    font-size: 54px;
+    font-family: "Raleway";
+    margin-bottom: 35px;
+}
+#slider .slider-info .description {
+    font-size: 16px;
+    font-family: "Montserrat";
+    margin-bottom: 55px;
+    line-height: 30px;
+}
+#about-us {
+    background-color: #ffffff;
+}
+#about-us .our-services {
+    margin: 0 auto;
+}
+#about-us .our-services ul {
+    /* width: 100%; */
+    display: flex;
+    padding: 80px 0;
+}
+#about-us .our-services ul li {
+    text-align: center;
+    width: 25%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+#about-us .our-services ul li .title,
+#about-us .our-services ul li .description, 
+#about-us .our-services ul li .line {
+    display: block;
+}
+#about-us .our-services ul li .title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #555555;
+    font-family: "Raleway";
+}
+#about-us .our-services ul li .description {
+    font-size: 14px;
+    line-height: 25px;
+    color: #8c8c8c;
+    font-family: "Montserrat";
+}
+#about-us .our-services ul li .line {
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#about-us .our-services .title {
+    text-transform: capitalize;
+}
+#about-us .our-services .line {
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+}
+#about-us .realization {
+    background-color: #fbfaf8;
+}
+.realization-content {
+    margin: 0 auto;
+    max-width: 1600px;
+    text-align: center;
+    padding-top: 90px;
+}
+#about-us .realization-separator {
+    background: rgb(33,27,25);
+    background: linear-gradient(90deg, rgba(33,27,25,1) 0%, rgba(33,27,25,1) 0%, rgba(78,52,39,1) 100%);
+}
+.realization {
+    background-color: #fbfaf8;
+}
+.realization-text {
+    margin-bottom: 48px;
+}
+.realization .realization-text h2 {
+    font-size: 30px;
+    font-family: "Raleway";
+    margin-bottom: 35px;
+    color: #555555;
+}
+.realization .realization-text .realization-description {
+    font-size: 16px;
+    font-family: "Montserrat";
+    line-height: 28px;
+}
+#portfolio {
+    height: 1160px;
+}
+#features {
+    height: 1700px;
+}
+#blog {
+    height: 705px;
+}
+#clients {
+    height: 500px;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+.purchase-row {
+    display: flex;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    justify-content: space-between;
+}
+.purchase-text .purchase-title {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+}
+.purchase-text .purchase-title .purchase-name {
+    color: #c7b299;
+}
+.purchase-text .purchase-description {
+    color: #615855;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: "Montserrat";
+}
+#portfolio {
+    padding-top: 90px;
+    background-color: #ffffff;
+}
+#portfolio .portfolio-text {
+    text-align: center;
+}
+#portfolio .portfolio-title {
+    font-size: 30px;
+    font-family: "Raleway";
+    margin-bottom: 35px;
+    color: #555555;
+    text-transform: capitalize;
+}
+.portfolio-text .portfolio-description {
+    font-size: 16px;
+    font-family: "Montserrat";
+    line-height: 28px;
+}
