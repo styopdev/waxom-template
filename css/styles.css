@@ -62,8 +62,8 @@ body {
     max-width: 1600px;
 }
 .container-padding {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 #slider {
     height: 1024px;
@@ -104,6 +104,7 @@ header {
 }
 header .logo {
     display: flex;
+    cursor: pointer;
     align-items: center;
 }
 header .logo-title {
@@ -238,16 +239,16 @@ header .logo .logo-title {
     line-height: 28px;
 }
 #portfolio {
-    height: 1160px;
+    /* height: 1160px; */
 }
 #features {
-    height: 1700px;
+    /* height: 1700px; */
 }
 #blog {
-    height: 705px;
+    /* height: 705px; */
 }
 #clients {
-    height: 500px;
+    /* height: 500px; */
 }
 .text-upper {
     text-transform: uppercase;
@@ -262,7 +263,7 @@ header .logo .logo-title {
     color: #ffffff;
     text-transform: capitalize;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-family: "Raleway";
 }
 .purchase-text .purchase-title .purchase-name {
@@ -280,6 +281,7 @@ header .logo .logo-title {
 }
 #portfolio .portfolio-text {
     text-align: center;
+    padding: 0 15%;
 }
 #portfolio .portfolio-title {
     font-size: 30px;
@@ -292,4 +294,49 @@ header .logo .logo-title {
     font-size: 16px;
     font-family: "Montserrat";
     line-height: 28px;
+    margin-bottom: 45px;
+    color: #8c8c8c;
+}
+.portfolio-buttons {
+    margin-bottom: 40px;
+}
+.portfolio-buttons button {
+    text-transform: capitalize;
+    padding: 12px 20px;
+    border: 1px solid #ebebeb;
+    outline: none;
+    font-size: 14px;
+    color: #8c8c8c;
+    font-family: "Montserrat";
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.portfolio-buttons button:hover {
+    color: #ffffff;
+    background-color: #998675;
+}
+#portfolio ul.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#portfolio ul.portfolio-list li {
+    width: 342px;
+    height: 335px;
+    background-color: blue;
+    margin-bottom: 30px;
+}
+#portfolio ul.portfolio-list li .portfolio-image {
+    height: 240px;
+    width: 100%;
+    background-image: url('../img/portfolio_item.png');
+}
+#portfolio ul.portfolio-list li .portfolio-item-text {
+    background-color: #fbfaf8;
+    height: 95px;
+}
+#portfolio ul.portfolio-list li:not(:last-child) {
+    /* margin-right: 30px; */
 }
