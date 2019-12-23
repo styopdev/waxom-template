@@ -242,7 +242,9 @@ header .logo .logo-title {
     /* height: 1160px; */
 }
 #features {
-    /* height: 1700px; */
+    height: 700px;
+    background-image: url('../img/presentation.png');
+    background-color: #998675;
 }
 #blog {
     /* height: 705px; */
@@ -277,6 +279,7 @@ header .logo .logo-title {
 }
 #portfolio {
     padding-top: 90px;
+    padding-bottom: 80px;
     background-color: #ffffff;
 }
 #portfolio .portfolio-text {
@@ -328,10 +331,13 @@ header .logo .logo-title {
     background-color: blue;
     margin-bottom: 30px;
 }
+#portfolio ul.portfolio-list {
+    margin-bottom: 10px;
+}
 #portfolio ul.portfolio-list li .portfolio-image {
     height: 240px;
     width: 100%;
-    background-image: url('../img/portfolio_item.png');
+    background-image: url('../img/portfolio_image_2.png');
 }
 #portfolio ul.portfolio-list li .portfolio-item-text {
     background-color: #fbfaf8;
