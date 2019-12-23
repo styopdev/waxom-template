@@ -1,2 +1,4 @@
 # waxom-template
-Waxom template html/css
+Waxom template html/css 
+
+http://veented.info/waxom/
