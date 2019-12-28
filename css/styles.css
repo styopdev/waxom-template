@@ -56,7 +56,6 @@ body {
 .wrapper {
     /* max-width: 1920px; */
     width: 100%;
-    background-color: red;
 }
 .container-fluid {
     max-width: 1600px;
@@ -102,6 +101,13 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav ul.main-navigation {
+    padding-top: 3px;
+}
 header .logo {
     display: flex;
     cursor: pointer;
@@ -115,7 +121,20 @@ header nav ul.main-navigation, header nav ul.navigation-buttons {
     display: inline-flex;
 }
 header nav ul.navigation-buttons {
-    margin-left: 10px;
+    margin-left: 25px;
+}
+header nav ul.navigation-buttons li:nth-child(1) a {
+    width: 19px;
+    height: 27px;
+    display: block;
+    background-image: url(../img/sprite.png);
+    background-position: -25px 0px;
+}
+header nav ul.navigation-buttons li:nth-child(2) a {
+    width: 25px;
+    height: 27px;
+    display: block;
+    background-image: url('../img/sprite.png');
 }
 header nav ul li {
     padding: 0 20px;
@@ -238,9 +257,6 @@ header .logo .logo-title {
     font-family: "Montserrat";
     line-height: 28px;
 }
-#portfolio {
-    /* height: 1160px; */
-}
 #features {
     height: 700px;
     background-image: url('../img/presentation.png');
@@ -249,8 +265,41 @@ header .logo .logo-title {
 #blog {
     /* height: 705px; */
 }
+#blog ul.blog-list li {
+    border: 1px solid #f8f8f8;
+}
+.blog-item-text {
+    padding: 35px 30px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.blog-item-text .title {
+    font-size: 20px;
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+}
+
+.blog-item-text .description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    color: #8c8c8c;
+    font-family: 'Montserrat';
+}
+
+.blog-item-text .read-more {
+    color: #c7b299;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+}
+
 #clients {
-    /* height: 500px; */
+    min-height: 500px;
+    background-image: url('../img/partners-bg.png');
 }
 .text-upper {
     text-transform: uppercase;
@@ -277,23 +326,23 @@ header .logo .logo-title {
     font-size: 18px;
     font-family: "Montserrat";
 }
-#portfolio {
+#portfolio, #blog {
     padding-top: 90px;
     padding-bottom: 80px;
     background-color: #ffffff;
 }
-#portfolio .portfolio-text {
+#portfolio .portfolio-text, #blog .blog-text {
     text-align: center;
     padding: 0 15%;
 }
-#portfolio .portfolio-title {
+#portfolio .portfolio-title, #blog .blog-title {
     font-size: 30px;
     font-family: "Raleway";
     margin-bottom: 35px;
     color: #555555;
     text-transform: capitalize;
 }
-.portfolio-text .portfolio-description {
+.portfolio-text .portfolio-description, .blog-text .blog-description {
     font-size: 16px;
     font-family: "Montserrat";
     line-height: 28px;
@@ -320,39 +369,104 @@ header .logo .logo-title {
     color: #ffffff;
     background-color: #998675;
 }
-#portfolio ul.portfolio-list {
+#portfolio ul.portfolio-list, #blog ul.blog-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#portfolio ul.portfolio-list li {
+#portfolio ul.portfolio-list li, #blog ul.blog-list li {
     width: 342px;
     height: 320px;
-    background-color: blue;
+    background-color: #fbfaf8;
     margin-bottom: 30px;
+}
+#blog ul.blog-list li {
+    height: initial;
 }
 #portfolio ul.portfolio-list {
     margin-bottom: 10px;
 }
-#portfolio ul.portfolio-list li .portfolio-image {
+#portfolio ul.portfolio-list li .portfolio-image, #blog ul.blog-list li .blog-image {
     height: 235px;
     width: 100%;
     background-image: url('../img/portfolio_image_2.png');
 }
 #portfolio ul.portfolio-list li .portfolio-item-text {
     background-color: #fbfaf8;
-    /* min-height: 90px; */
-    padding: 28px 0 25px 30px;
+    padding: 28px 30px 25px 30px;
 }
 .portfolio-item-text .title {
     font-size: 20px;
     margin-bottom: 10px;
     color: #c7b299;
+    font-family: 'Raleway';
+}
+.blog-item-text .title {
+    color: #555555;
 }
 .portfolio-item-text .tags {
     font-size: 14px;
     color: #d1d1d1;
+    font-family: 'Montserrat';
 }
 #portfolio ul.portfolio-list li:not(:last-child) {
     /* margin-right: 30px; */
+}
+
+#partners, #footer-links {
+    min-height: 480px;
+}
+
+#partners {
+    background-image: url('../img/partners-bg.png');
+    /* background-size: cover; */
+}
+
+#partners .summary {
+    display: flex;
+    height: 480px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#partners .summary .col-3 {
+    background-image: url('../img/sprite.png');
+    background-position: 10px 10px;
+    /* width: 25%; */
+    margin-right: 10px;
+    height: 100%;
+    /* background-color: red; */
+}
+
+#partners .summary .col-3:first-child {
+    background-position: -1px -75px;
+    width: 223px;
+    height: 170px;
+}
+
+#partners .summary .col-3:nth-child(2) {
+    background-position: -220px -75px;
+    width: 223px;
+    height: 215px;
+}
+
+#partners .summary .col-3:nth-child(3) {
+    background-position: -443px -75px;
+    width: 223px;
+    height: 170px;
+}
+
+#partners .summary .col-3:nth-child(4) {
+    background-position: -661px -75px;
+    width: 223px;
+    height: 170px;
+}
+
+#footer-links {
+    background-color: #191919;
+}
+
+footer {
+    height: 110px;
+    background-color: #111111;
 }
