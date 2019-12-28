@@ -417,6 +417,23 @@ header .logo .logo-title {
     min-height: 480px;
 }
 
+footer .links {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+footer .links ul {
+    display: flex;
+}
+
+footer .links li { 
+    color: #ffffff;
+    padding-right: 20px;
+    font-size: 13px;
+    font-family: 'Raleway';
+}
+
 #partners {
     background-image: url('../img/partners-bg.png');
     /* background-size: cover; */
