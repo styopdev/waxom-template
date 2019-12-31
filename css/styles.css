@@ -82,7 +82,7 @@ body {
     margin: 0 auto;
 }
 .action-button {
-    height: 50px;
+    /* height: 50px; */
     background-color: #998675;
     padding: 15px 25px;
     color: #ffffff;
@@ -436,6 +436,7 @@ header .logo .logo-title {
     height: 235px;
     width: 100%;
     background-image: url('../img/portfolio_image_2.png');
+    background-size: cover;
 }
 #portfolio ul.portfolio-list li .portfolio-item-text {
     background-color: #fbfaf8;
@@ -640,8 +641,43 @@ footer {
     #slider .slider-info {
         width: 100%;
     }
+    #about-us .our-services ul li {
+        width: 100%;
+    }
+    #about-us .our-services ul li .description {
+        padding: 0 80px;
+    }
     header {
         display: none;
+    }
+    #portfolio ul.portfolio-list, #blog ul.blog-list {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #partners .summary .col-3:first-child .partner-logo {
+        background-position: -2px -51px;
+        width: 150px;
+        height: 114px;
+        background-size: 410%;;
+    }
+    #partners .summary .col-3:nth-child(2) .partner-logo {
+        background-position: -156px -55px;
+        width: 150px;
+        height: 147px;
+        background-size: 410%;;
+    }
+    #partners .summary .col-3:nth-child(3) .partner-logo {
+        background-position: -419px -75px;
+        width: 203px;
+        background-size: 410%;
+        height: 130px;
+    }
+    #partners .summary .col-3:nth-child(4) .partner-logo {
+        background-position: 160px -61px;
+        width: 163px;
+        height: 130px;
+        background-size: 410%;
     }
 }
 /*
