@@ -697,6 +697,17 @@ footer {
     footer .links li .prelink {
         padding-bottom: 5px;
     }
+
+    #footer-links .summary {
+        flex-direction: column;
+    }
+
+    #footer-links .col-3 {
+        width: 100% !important;
+    }
+    #footer-links .col-3 h3, #footer-links .summary .logo {
+        text-align: center;
+    }
 }
 /*
     320
