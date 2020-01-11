@@ -308,9 +308,7 @@ header .logo .logo-title {
     background-image: url('../img/presentation.png');
     background-color: #998675;
 }
-#blog {
-    /* height: 705px; */
-}
+
 #blog ul.blog-list li {
     border: 1px solid #f8f8f8;
 }
@@ -455,9 +453,6 @@ header .logo .logo-title {
     font-size: 14px;
     color: #d1d1d1;
     font-family: 'Montserrat';
-}
-#portfolio ul.portfolio-list li:not(:last-child) {
-    /* margin-right: 30px; */
 }
 footer .links {
     display: flex;
@@ -638,6 +633,12 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+    header nav ul.main-navigation {
+        display: none;
+    }
     #slider .slider-info {
         width: 100%;
     }
@@ -646,9 +647,6 @@ footer {
     }
     #about-us .our-services ul li .description {
         padding: 0 80px;
-    }
-    header {
-        display: none;
     }
     #portfolio ul.portfolio-list, #blog ul.blog-list {
         align-items: center;
@@ -679,6 +677,26 @@ footer {
         height: 130px;
         background-size: 410%;
     }
+    /* #footer-links .col-3 {} */
+    footer {
+        padding-bottom: 35px;
+        height: auto;
+    }
+    footer .links ul {
+        flex-direction: column;
+    }
+    footer .links {
+        flex-direction: column;
+    }
+    footer .links li {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .links li .prelink {
+        padding-bottom: 5px;
+    }
 }
 /*
     320
@@ -693,6 +711,4 @@ footer {
     max-width 992 tablet version x2
     max-width 768 mobile version, responsive menu
     max-width 640  x1
-
 */
-
